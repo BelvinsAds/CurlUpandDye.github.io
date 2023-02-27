@@ -328,7 +328,7 @@ header {
   width: 100%;
   background: black !important;
   z-index: 1;
-  padding: 15px 0px;
+  padding: 8px 0px;
   font-family: 'Gloock', serif;
 }
 .navbar-nav .dropdown-items {
