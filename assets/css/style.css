@@ -301,6 +301,7 @@ p {
   background: black;
   box-shadow: 2px 1px 12px 0px #888888 !important;
   z-index: 99;
+  opacity: 70%;
 }
 .scrooling-active .navbar-nav .dropdown-items a i {
   color: #fff;
@@ -330,6 +331,8 @@ header {
   z-index: 1;
   padding: 8px 0px;
   font-family: 'Gloock', serif;
+  opacity: 100%;
+  transition: 0.3s;
 }
 .navbar-nav .dropdown-items {
   position: relative;
