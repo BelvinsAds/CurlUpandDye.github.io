@@ -1213,7 +1213,7 @@ header {
 }
 
 .pricing-image img {
-  height: 450px;
+  height: auto !important;;
 }
 
 @media screen and (max-width:500px) {
