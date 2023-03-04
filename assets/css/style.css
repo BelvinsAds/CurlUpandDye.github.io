@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -9,6 +10,8 @@ body {
   padding: 0;
   margin: 0;
   background: #222;
+  overflow-x: hidden;
+  z-index: 1;
 }
 h1,
 h2,
@@ -1213,7 +1216,7 @@ header {
 }
 
 .pricing-image img {
-  height: auto !important;;
+  height: auto !important;
 }
 
 @media screen and (max-width:500px) {
@@ -1226,6 +1229,10 @@ header {
     font-size: 14px;
   }
   .pricing-image {
+    width: auto !important;
+  }
+  .pricing-image img {
+    height: fit-content !important;
     width: auto !important;
   }
 }
