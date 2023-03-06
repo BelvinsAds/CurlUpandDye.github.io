@@ -23,7 +23,7 @@ function Form() {
 function Appt() {
     var field1 = $('#Guest_Name').val();
     var field2 = $('#Guest_Email').val();
-    var field3 = $('#Guest_Num').val();
+    var field3 = $('#GuestNum').val();
     var field4 = $('#DateInput').val();
     var field5 = $('#TimeInput').val();
     var field6 = $('#Service').val();
