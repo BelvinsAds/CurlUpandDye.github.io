@@ -54,7 +54,7 @@ function Appt() {
     return false;
 }
 
-var timeset = document.getElementById("DateInput");
+var timeset = document.getElementById("DateInput"); 
 
    timeset.addEventListener('input', function() {
         const weekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
