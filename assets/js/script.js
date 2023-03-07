@@ -58,7 +58,7 @@ var timeset = document.getElementById("DateInput");
 
    timeset.addEventListener('input', function() {
         const weekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-       var id = document.getElementById("timedate").value;
+       var id = document.getElementById("DateInput").value;
        console.log(id);
        const d = new Date(id);
        let day = d.getDay();
