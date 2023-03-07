@@ -54,6 +54,76 @@ function Appt() {
     return false;
 }
 
+var timeset = document.getElementById("timedate");
+
+   timeset.addEventListener('input', function() {
+        const weekday = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+       var id = document.getElementById("timedate").value;
+       console.log(id);
+       const d = new Date(id);
+       let day = d.getDay();
+       console.log(day);
+        let dateweek = weekday[day]
+        console.log(dateweek)
+        if(dateweek === "Sunday") {
+        var time
+        time = `
+            <h6 class="title text-capitalize">
+            Type Preferred Time </h6>
+            <input type="time" data-name="Time" name="entry.1326889776" id="TimeInput" min="09:00" max="14:00" placeholder="" required>
+        `;
+        let timeshow = document.getElementById("time")
+        timeshow.innerHTML = time
+    } else if(dateweek === "Monday") {
+        var time
+        time = `
+            <h6 class="title text-capitalize">
+            Type Preferred Time </h6>
+            <input type="time" data-name="Time" name="entry.1326889776" id="TimeInput" min="10:00" max="17:00" placeholder="" required>
+        `;
+        let timeshow = document.getElementById("time")
+        timeshow.innerHTML = time
+    } else if(dateweek === "Tuesday") {
+        alert("Curl Up and Dye:  Sorry We Are Closed On Tuesday! For help please refer to our hours")
+    } else if(dateweek === "Wednesday") {
+        var time
+        time = `
+            <h6 class="title text-capitalize">
+            Type Preferred Time </h6>
+            <input type="time" data-name="Time" name="entry.1326889776" id="TimeInput" min="10:00" max="19:00" placeholder="" required>
+        `;
+        let timeshow = document.getElementById("time")
+        timeshow.innerHTML = time
+    }else if(dateweek === "Thursday") {
+        var time
+        time = `
+            <h6 class="title text-capitalize">
+            Type Preferred Time </h6>
+            <input type="time" data-name="Time" name="entry.1326889776" id="TimeInput" min="10:00" max="19:00" placeholder="" required>
+        `;
+        let timeshow = document.getElementById("time")
+        timeshow.innerHTML = time
+    }else if(dateweek === "Friday") {
+        var time
+        time = `
+            <h6 class="title text-capitalize">
+            Type Preferred Time </h6>
+            <input type="time" data-name="Time" name="entry.1326889776" id="TimeInput" min="09:00" max="18:00" placeholder="" required>
+        `;
+        let timeshow = document.getElementById("time")
+        timeshow.innerHTML = time
+    }else if(dateweek === "Saturday") {
+        var time
+        time = `
+            <h6 class="title text-capitalize">
+            Type Preferred Time </h6>
+            <input type="time" data-name="Time" name="entry.1326889776" id="TimeInput" min="09:00" max="16:00" placeholder="" required>
+        `;
+        let timeshow = document.getElementById("time")
+        timeshow.innerHTML = time
+    }
+})
+
 function Contact() {
     var field1 = $('#ContName').val();
     var field2 = $('#ContEmail').val();
